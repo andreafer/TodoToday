@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0705D96B1AADF01400984988 /* TodoTodayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D96A1AADF01400984988 /* TodoTodayTests.m */; };
+		0705DAC91AADF05A00984988 /* TodoDateReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9771AADF05A00984988 /* TodoDateReminder.m */; };
+		0705DACA1AADF05A00984988 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9791AADF05A00984988 /* AppDelegate.m */; };
+		0705DACB1AADF05A00984988 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0705D97A1AADF05A00984988 /* LaunchScreen.xib */; };
+		0705DACC1AADF05A00984988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0705D97C1AADF05A00984988 /* Main.storyboard */; };
+		0705DACD1AADF05A00984988 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9811AADF05A00984988 /* Common.m */; };
+		0705DACE1AADF05A00984988 /* CustomDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9841AADF05A00984988 /* CustomDatePickerViewController.m */; };
+		0705DACF1AADF05A00984988 /* display_botton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0705D9851AADF05A00984988 /* display_botton.png */; };
+		0705DAD01AADF05A00984988 /* display_botton_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 0705D9861AADF05A00984988 /* display_botton_down.png */; };
+		0705DAD11AADF05A00984988 /* title_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0705D9871AADF05A00984988 /* title_bar.png */; };
+		0705DAD31AADF05A00984988 /* SuperTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D98C1AADF05A00984988 /* SuperTableViewController.m */; };
+		0705DAD41AADF05A00984988 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D98E1AADF05A00984988 /* SuperViewController.m */; };
+		0705DAD51AADF05A00984988 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9911AADF05A00984988 /* Config.m */; };
+		0705DAD61AADF05A00984988 /* AddFutureEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9941AADF05A00984988 /* AddFutureEventViewController.m */; };
+		0705DAD81AADF05A00984988 /* CongratulationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9981AADF05A00984988 /* CongratulationsViewController.m */; };
+		0705DADC1AADF05A00984988 /* StartStepCompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9A01AADF05A00984988 /* StartStepCompleteViewController.m */; };
+		0705DADD1AADF05A00984988 /* StartStepOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9A21AADF05A00984988 /* StartStepOneViewController.m */; };
+		0705DADE1AADF05A00984988 /* StartStepThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9A41AADF05A00984988 /* StartStepThreeViewController.m */; };
+		0705DADF1AADF05A00984988 /* StartStepTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9A61AADF05A00984988 /* StartStepTwoViewController.m */; };
+		0705DAE01AADF05A00984988 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9A81AADF05A00984988 /* StartViewController.m */; };
+		0705DAE11AADF05A00984988 /* TodayGoalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9AA1AADF05A00984988 /* TodayGoalsViewController.m */; };
+		0705DAE31AADF05A00984988 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0705D9AF1AADF05A00984988 /* Images.xcassets */; };
+		0705DAF61AADF05A00984988 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9EA1AADF05A00984988 /* main.m */; };
+		0705DAF71AADF05A00984988 /* Reminder+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9ED1AADF05A00984988 /* Reminder+Functions.m */; };
+		0705DAF81AADF05A00984988 /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9EF1AADF05A00984988 /* Reminder.m */; };
+		0705DAF91AADF05A00984988 /* RemindTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9F11AADF05A00984988 /* RemindTime.m */; };
+		0705DAFA1AADF05A00984988 /* Todo+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9F31AADF05A00984988 /* Todo+Functions.m */; };
+		0705DAFB1AADF05A00984988 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9F51AADF05A00984988 /* Todo.m */; };
+		0705DAFC1AADF05A00984988 /* TodoDate+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9F71AADF05A00984988 /* TodoDate+Functions.m */; };
+		0705DAFD1AADF05A00984988 /* TodoDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9F91AADF05A00984988 /* TodoDate.m */; };
+		0705DAFE1AADF05A00984988 /* TodoToday.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0705D9FA1AADF05A00984988 /* TodoToday.xcdatamodeld */; };
+		0705DB1E1AADF05A00984988 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0705DA3C1AADF05A00984988 /* readme.txt */; };
+		0705DB731AADF05A00984988 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705DAC51AADF05A00984988 /* Toast+UIView.m */; };
+		0705DB741AADF05A00984988 /* TodoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705DAC81AADF05A00984988 /* TodoTableViewCell.m */; };
+		071341491AB201BC0079F385 /* SoundListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071341481AB201BC0079F385 /* SoundListViewController.m */; };
+		0713414B1AB204180079F385 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713414A1AB204180079F385 /* AudioToolbox.framework */; };
+		0718CE9F1AAF55F400D2AE80 /* EditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0718CE9E1AAF55F400D2AE80 /* EditEventViewController.m */; };
+		078D28051AB5FD3D00E281B7 /* bk_forward_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 078D28041AB5FD3D00E281B7 /* bk_forward_normal.png */; };
+		078D28081AB605F900E281B7 /* GlobalFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D28071AB605F900E281B7 /* GlobalFunc.m */; };
+		07B9C28B1AB356D000BA6F1B /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C27A1AB356CF00BA6F1B /* bell.png */; };
+		07B9C28C1AB356D000BA6F1B /* bk_addfutureevent.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C27B1AB356CF00BA6F1B /* bk_addfutureevent.png */; };
+		07B9C28D1AB356D000BA6F1B /* bk_back_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C27C1AB356CF00BA6F1B /* bk_back_normal.png */; };
+		07B9C28E1AB356D000BA6F1B /* bk_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C27D1AB356CF00BA6F1B /* bk_back_normal@2x.png */; };
+		07B9C28F1AB356D000BA6F1B /* bk_back_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C27E1AB356CF00BA6F1B /* bk_back_sel.png */; };
+		07B9C2901AB356D000BA6F1B /* bk_btn_next.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C27F1AB356CF00BA6F1B /* bk_btn_next.png */; };
+		07B9C2911AB356D000BA6F1B /* bk_check_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2801AB356CF00BA6F1B /* bk_check_off.png */; };
+		07B9C2921AB356D000BA6F1B /* bk_check_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2811AB356CF00BA6F1B /* bk_check_on.png */; };
+		07B9C2931AB356D000BA6F1B /* bk_menu_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2821AB356CF00BA6F1B /* bk_menu_normal.png */; };
+		07B9C2941AB356D000BA6F1B /* bk_plus_normal.psd in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2831AB356CF00BA6F1B /* bk_plus_normal.psd */; };
+		07B9C2951AB356D000BA6F1B /* bk_plus_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2841AB356CF00BA6F1B /* bk_plus_normal@2x.png */; };
+		07B9C2961AB356D000BA6F1B /* btn_getstarted.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2851AB356CF00BA6F1B /* btn_getstarted.png */; };
+		07B9C2971AB356D000BA6F1B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2861AB356CF00BA6F1B /* icon.png */; };
+		07B9C2981AB356D000BA6F1B /* img_clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2871AB356CF00BA6F1B /* img_clock.png */; };
+		07B9C2991AB356D000BA6F1B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2881AB356CF00BA6F1B /* logo.png */; };
+		07B9C29A1AB356D000BA6F1B /* radio_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2891AB356CF00BA6F1B /* radio_checked.png */; };
+		07B9C29B1AB356D000BA6F1B /* radio_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C28A1AB356CF00BA6F1B /* radio_unchecked.png */; };
+		07B9C2A51AB356DF00BA6F1B /* Beep-SoundBible.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C29D1AB356DF00BA6F1B /* Beep-SoundBible.wav */; };
+		07B9C2A61AB356DF00BA6F1B /* Bleep-SoundBible.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C29E1AB356DF00BA6F1B /* Bleep-SoundBible.wav */; };
+		07B9C2A71AB356DF00BA6F1B /* Car Door Open And Alarm-SoundBible.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C29F1AB356DF00BA6F1B /* Car Door Open And Alarm-SoundBible.wav */; };
+		07B9C2A81AB356DF00BA6F1B /* Computer_Magic-Microsift.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2A01AB356DF00BA6F1B /* Computer_Magic-Microsift.wav */; };
+		07B9C2A91AB356DF00BA6F1B /* Metronome-SoundBible.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2A11AB356DF00BA6F1B /* Metronome-SoundBible.wav */; };
+		07B9C2AA1AB356DF00BA6F1B /* Realistic_Punch-Mark_DiAngelo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2A21AB356DF00BA6F1B /* Realistic_Punch-Mark_DiAngelo.wav */; };
+		07B9C2AB1AB356DF00BA6F1B /* Temple Bell-SoundBible.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2A31AB356DF00BA6F1B /* Temple Bell-SoundBible.wav */; };
+		07B9C2AC1AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2A41AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav */; };
+		07B9C2B01AB4B19500BA6F1B /* bk_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2AF1AB4B19500BA6F1B /* bk_check.png */; };
+		232293A876AB17EDA015BCEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAD882ACE75EAF17DF45310 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0705D9651AADF01400984988 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0705D9401AADF01400984988 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0705D9471AADF01400984988;
+			remoteInfo = TodoToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0705D9481AADF01400984988 /* TodoToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0705D9641AADF01400984988 /* TodoTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0705D9691AADF01400984988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0705D96A1AADF01400984988 /* TodoTodayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoTodayTests.m; sourceTree = "<group>"; };
+		0705D9761AADF05A00984988 /* TodoDateReminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoDateReminder.h; sourceTree = "<group>"; };
+		0705D9771AADF05A00984988 /* TodoDateReminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoDateReminder.m; sourceTree = "<group>"; };
+		0705D9781AADF05A00984988 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0705D9791AADF05A00984988 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0705D97B1AADF05A00984988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0705D97D1AADF05A00984988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0705D9801AADF05A00984988 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		0705D9811AADF05A00984988 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		0705D9831AADF05A00984988 /* CustomDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDatePickerViewController.h; sourceTree = "<group>"; };
+		0705D9841AADF05A00984988 /* CustomDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomDatePickerViewController.m; sourceTree = "<group>"; };
+		0705D9851AADF05A00984988 /* display_botton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = display_botton.png; sourceTree = "<group>"; };
+		0705D9861AADF05A00984988 /* display_botton_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = display_botton_down.png; sourceTree = "<group>"; };
+		0705D9871AADF05A00984988 /* title_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_bar.png; sourceTree = "<group>"; };
+		0705D98B1AADF05A00984988 /* SuperTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperTableViewController.h; sourceTree = "<group>"; };
+		0705D98C1AADF05A00984988 /* SuperTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperTableViewController.m; sourceTree = "<group>"; };
+		0705D98D1AADF05A00984988 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
+		0705D98E1AADF05A00984988 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
+		0705D9901AADF05A00984988 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		0705D9911AADF05A00984988 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		0705D9931AADF05A00984988 /* AddFutureEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFutureEventViewController.h; sourceTree = "<group>"; };
+		0705D9941AADF05A00984988 /* AddFutureEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFutureEventViewController.m; sourceTree = "<group>"; };
+		0705D9971AADF05A00984988 /* CongratulationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CongratulationsViewController.h; sourceTree = "<group>"; };
+		0705D9981AADF05A00984988 /* CongratulationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CongratulationsViewController.m; sourceTree = "<group>"; };
+		0705D99F1AADF05A00984988 /* StartStepCompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartStepCompleteViewController.h; sourceTree = "<group>"; };
+		0705D9A01AADF05A00984988 /* StartStepCompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartStepCompleteViewController.m; sourceTree = "<group>"; };
+		0705D9A11AADF05A00984988 /* StartStepOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartStepOneViewController.h; sourceTree = "<group>"; };
+		0705D9A21AADF05A00984988 /* StartStepOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartStepOneViewController.m; sourceTree = "<group>"; };
+		0705D9A31AADF05A00984988 /* StartStepThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartStepThreeViewController.h; sourceTree = "<group>"; };
+		0705D9A41AADF05A00984988 /* StartStepThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartStepThreeViewController.m; sourceTree = "<group>"; };
+		0705D9A51AADF05A00984988 /* StartStepTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartStepTwoViewController.h; sourceTree = "<group>"; };
+		0705D9A61AADF05A00984988 /* StartStepTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartStepTwoViewController.m; sourceTree = "<group>"; };
+		0705D9A71AADF05A00984988 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		0705D9A81AADF05A00984988 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		0705D9A91AADF05A00984988 /* TodayGoalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayGoalsViewController.h; sourceTree = "<group>"; };
+		0705D9AA1AADF05A00984988 /* TodayGoalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayGoalsViewController.m; sourceTree = "<group>"; };
+		0705D9AC1AADF05A00984988 /* ConstString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstString.h; sourceTree = "<group>"; };
+		0705D9AF1AADF05A00984988 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0705D9B01AADF05A00984988 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0705D9EA1AADF05A00984988 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0705D9EC1AADF05A00984988 /* Reminder+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reminder+Functions.h"; sourceTree = "<group>"; };
+		0705D9ED1AADF05A00984988 /* Reminder+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Reminder+Functions.m"; sourceTree = "<group>"; };
+		0705D9EE1AADF05A00984988 /* Reminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reminder.h; sourceTree = "<group>"; };
+		0705D9EF1AADF05A00984988 /* Reminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reminder.m; sourceTree = "<group>"; };
+		0705D9F01AADF05A00984988 /* RemindTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindTime.h; sourceTree = "<group>"; };
+		0705D9F11AADF05A00984988 /* RemindTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindTime.m; sourceTree = "<group>"; };
+		0705D9F21AADF05A00984988 /* Todo+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Todo+Functions.h"; sourceTree = "<group>"; };
+		0705D9F31AADF05A00984988 /* Todo+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Todo+Functions.m"; sourceTree = "<group>"; };
+		0705D9F41AADF05A00984988 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		0705D9F51AADF05A00984988 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		0705D9F61AADF05A00984988 /* TodoDate+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TodoDate+Functions.h"; sourceTree = "<group>"; };
+		0705D9F71AADF05A00984988 /* TodoDate+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TodoDate+Functions.m"; sourceTree = "<group>"; };
+		0705D9F81AADF05A00984988 /* TodoDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoDate.h; sourceTree = "<group>"; };
+		0705D9F91AADF05A00984988 /* TodoDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoDate.m; sourceTree = "<group>"; };
+		0705D9FB1AADF05A00984988 /* TodoToday.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoToday.xcdatamodel; sourceTree = "<group>"; };
+		0705DA381AADF05A00984988 /* KNDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDefines.h; sourceTree = "<group>"; };
+		0705DA391AADF05A00984988 /* KNFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFonts.h; sourceTree = "<group>"; };
+		0705DA3A1AADF05A00984988 /* KNRequestNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNRequestNotifications.h; sourceTree = "<group>"; };
+		0705DA3B1AADF05A00984988 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		0705DA3C1AADF05A00984988 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		0705DAC41AADF05A00984988 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		0705DAC51AADF05A00984988 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		0705DAC71AADF05A00984988 /* TodoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoTableViewCell.h; sourceTree = "<group>"; };
+		0705DAC81AADF05A00984988 /* TodoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoTableViewCell.m; sourceTree = "<group>"; };
+		0705DB751AADF06400984988 /* TodoToday-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TodoToday-Prefix.pch"; sourceTree = "<group>"; };
+		071341471AB201BC0079F385 /* SoundListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundListViewController.h; sourceTree = "<group>"; };
+		071341481AB201BC0079F385 /* SoundListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundListViewController.m; sourceTree = "<group>"; };
+		0713414A1AB204180079F385 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0718CE9D1AAF55E900D2AE80 /* EditEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditEventViewController.h; sourceTree = "<group>"; };
+		0718CE9E1AAF55F400D2AE80 /* EditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditEventViewController.m; sourceTree = "<group>"; };
+		078D28041AB5FD3D00E281B7 /* bk_forward_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_forward_normal.png; sourceTree = "<group>"; };
+		078D28061AB605F900E281B7 /* GlobalFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFunc.h; sourceTree = "<group>"; };
+		078D28071AB605F900E281B7 /* GlobalFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunc.m; sourceTree = "<group>"; };
+		07B9C27A1AB356CF00BA6F1B /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+		07B9C27B1AB356CF00BA6F1B /* bk_addfutureevent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_addfutureevent.png; sourceTree = "<group>"; };
+		07B9C27C1AB356CF00BA6F1B /* bk_back_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_back_normal.png; sourceTree = "<group>"; };
+		07B9C27D1AB356CF00BA6F1B /* bk_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bk_back_normal@2x.png"; sourceTree = "<group>"; };
+		07B9C27E1AB356CF00BA6F1B /* bk_back_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_back_sel.png; sourceTree = "<group>"; };
+		07B9C27F1AB356CF00BA6F1B /* bk_btn_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_btn_next.png; sourceTree = "<group>"; };
+		07B9C2801AB356CF00BA6F1B /* bk_check_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_check_off.png; sourceTree = "<group>"; };
+		07B9C2811AB356CF00BA6F1B /* bk_check_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_check_on.png; sourceTree = "<group>"; };
+		07B9C2821AB356CF00BA6F1B /* bk_menu_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_menu_normal.png; sourceTree = "<group>"; };
+		07B9C2831AB356CF00BA6F1B /* bk_plus_normal.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = bk_plus_normal.psd; sourceTree = "<group>"; };
+		07B9C2841AB356CF00BA6F1B /* bk_plus_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bk_plus_normal@2x.png"; sourceTree = "<group>"; };
+		07B9C2851AB356CF00BA6F1B /* btn_getstarted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_getstarted.png; sourceTree = "<group>"; };
+		07B9C2861AB356CF00BA6F1B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		07B9C2871AB356CF00BA6F1B /* img_clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_clock.png; sourceTree = "<group>"; };
+		07B9C2881AB356CF00BA6F1B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		07B9C2891AB356CF00BA6F1B /* radio_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_checked.png; sourceTree = "<group>"; };
+		07B9C28A1AB356CF00BA6F1B /* radio_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_unchecked.png; sourceTree = "<group>"; };
+		07B9C29D1AB356DF00BA6F1B /* Beep-SoundBible.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Beep-SoundBible.wav"; sourceTree = "<group>"; };
+		07B9C29E1AB356DF00BA6F1B /* Bleep-SoundBible.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bleep-SoundBible.wav"; sourceTree = "<group>"; };
+		07B9C29F1AB356DF00BA6F1B /* Car Door Open And Alarm-SoundBible.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Car Door Open And Alarm-SoundBible.wav"; sourceTree = "<group>"; };
+		07B9C2A01AB356DF00BA6F1B /* Computer_Magic-Microsift.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Computer_Magic-Microsift.wav"; sourceTree = "<group>"; };
+		07B9C2A11AB356DF00BA6F1B /* Metronome-SoundBible.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Metronome-SoundBible.wav"; sourceTree = "<group>"; };
+		07B9C2A21AB356DF00BA6F1B /* Realistic_Punch-Mark_DiAngelo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Realistic_Punch-Mark_DiAngelo.wav"; sourceTree = "<group>"; };
+		07B9C2A31AB356DF00BA6F1B /* Temple Bell-SoundBible.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Temple Bell-SoundBible.wav"; sourceTree = "<group>"; };
+		07B9C2A41AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Woosh-Mark_DiAngelo.wav"; sourceTree = "<group>"; };
+		07B9C2AF1AB4B19500BA6F1B /* bk_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_check.png; sourceTree = "<group>"; };
+		2D1B44DBD53E7BC5024EDEB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5BAD882ACE75EAF17DF45310 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92C2D89CF023A61DE25F207 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0705D9451AADF01400984988 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713414B1AB204180079F385 /* AudioToolbox.framework in Frameworks */,
+				232293A876AB17EDA015BCEE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0705D9611AADF01400984988 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038DC9D3AC3E2A8E48890E40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0713414A1AB204180079F385 /* AudioToolbox.framework */,
+				5BAD882ACE75EAF17DF45310 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0705D93F1AADF01400984988 = {
+			isa = PBXGroup;
+			children = (
+				0705DB751AADF06400984988 /* TodoToday-Prefix.pch */,
+				0705D9741AADF05A00984988 /* TodoToday */,
+				0705D9671AADF01400984988 /* TodoTodayTests */,
+				0705D9491AADF01400984988 /* Products */,
+				9009430F7A7C242D08D9E134 /* Pods */,
+				038DC9D3AC3E2A8E48890E40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0705D9491AADF01400984988 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0705D9481AADF01400984988 /* TodoToday.app */,
+				0705D9641AADF01400984988 /* TodoTodayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0705D9671AADF01400984988 /* TodoTodayTests */ = {
+			isa = PBXGroup;
+			children = (
+				0705D96A1AADF01400984988 /* TodoTodayTests.m */,
+				0705D9681AADF01400984988 /* Supporting Files */,
+			);
+			path = TodoTodayTests;
+			sourceTree = "<group>";
+		};
+		0705D9681AADF01400984988 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0705D9691AADF01400984988 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0705D9741AADF05A00984988 /* TodoToday */ = {
+			isa = PBXGroup;
+			children = (
+				0705D9751AADF05A00984988 /* App */,
+				0705D9781AADF05A00984988 /* AppDelegate.h */,
+				0705D9791AADF05A00984988 /* AppDelegate.m */,
+				0705D97A1AADF05A00984988 /* LaunchScreen.xib */,
+				0705D97C1AADF05A00984988 /* Main.storyboard */,
+				0705D97E1AADF05A00984988 /* Common */,
+				0705D98F1AADF05A00984988 /* Config */,
+				0705D9921AADF05A00984988 /* Controllers */,
+				0705D9AB1AADF05A00984988 /* Global */,
+				0705D9AF1AADF05A00984988 /* Images.xcassets */,
+				0705D9B01AADF05A00984988 /* Info.plist */,
+				0705D9B11AADF05A00984988 /* Library */,
+				0705D9EA1AADF05A00984988 /* main.m */,
+				0705D9EB1AADF05A00984988 /* Models */,
+				0705D9FC1AADF05A00984988 /* Resources */,
+				0705DA0F1AADF05A00984988 /* Utilities */,
+				0705DAC61AADF05A00984988 /* Views */,
+			);
+			path = TodoToday;
+			sourceTree = "<group>";
+		};
+		0705D9751AADF05A00984988 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0705D9761AADF05A00984988 /* TodoDateReminder.h */,
+				0705D9771AADF05A00984988 /* TodoDateReminder.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0705D97E1AADF05A00984988 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0705D9801AADF05A00984988 /* Common.h */,
+				0705D9811AADF05A00984988 /* Common.m */,
+				0705D9821AADF05A00984988 /* CustomDatePicker */,
+				0705D9881AADF05A00984988 /* SuperViewController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0705D9821AADF05A00984988 /* CustomDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				0705D9831AADF05A00984988 /* CustomDatePickerViewController.h */,
+				0705D9841AADF05A00984988 /* CustomDatePickerViewController.m */,
+				0705D9851AADF05A00984988 /* display_botton.png */,
+				0705D9861AADF05A00984988 /* display_botton_down.png */,
+				0705D9871AADF05A00984988 /* title_bar.png */,
+			);
+			path = CustomDatePicker;
+			sourceTree = "<group>";
+		};
+		0705D9881AADF05A00984988 /* SuperViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0705D98B1AADF05A00984988 /* SuperTableViewController.h */,
+				0705D98C1AADF05A00984988 /* SuperTableViewController.m */,
+				0705D98D1AADF05A00984988 /* SuperViewController.h */,
+				0705D98E1AADF05A00984988 /* SuperViewController.m */,
+			);
+			path = SuperViewController;
+			sourceTree = "<group>";
+		};
+		0705D98F1AADF05A00984988 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0705D9901AADF05A00984988 /* Config.h */,
+				0705D9911AADF05A00984988 /* Config.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0705D9921AADF05A00984988 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				071341471AB201BC0079F385 /* SoundListViewController.h */,
+				071341481AB201BC0079F385 /* SoundListViewController.m */,
+				0705D9931AADF05A00984988 /* AddFutureEventViewController.h */,
+				0705D9941AADF05A00984988 /* AddFutureEventViewController.m */,
+				0705D9971AADF05A00984988 /* CongratulationsViewController.h */,
+				0705D9981AADF05A00984988 /* CongratulationsViewController.m */,
+				0705D99F1AADF05A00984988 /* StartStepCompleteViewController.h */,
+				0705D9A01AADF05A00984988 /* StartStepCompleteViewController.m */,
+				0705D9A11AADF05A00984988 /* StartStepOneViewController.h */,
+				0705D9A21AADF05A00984988 /* StartStepOneViewController.m */,
+				0705D9A31AADF05A00984988 /* StartStepThreeViewController.h */,
+				0705D9A41AADF05A00984988 /* StartStepThreeViewController.m */,
+				0705D9A51AADF05A00984988 /* StartStepTwoViewController.h */,
+				0705D9A61AADF05A00984988 /* StartStepTwoViewController.m */,
+				0705D9A71AADF05A00984988 /* StartViewController.h */,
+				0705D9A81AADF05A00984988 /* StartViewController.m */,
+				0705D9A91AADF05A00984988 /* TodayGoalsViewController.h */,
+				0705D9AA1AADF05A00984988 /* TodayGoalsViewController.m */,
+				0718CE9D1AAF55E900D2AE80 /* EditEventViewController.h */,
+				0718CE9E1AAF55F400D2AE80 /* EditEventViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0705D9AB1AADF05A00984988 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				078D28061AB605F900E281B7 /* GlobalFunc.h */,
+				078D28071AB605F900E281B7 /* GlobalFunc.m */,
+				0705D9AC1AADF05A00984988 /* ConstString.h */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		0705D9B11AADF05A00984988 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0705D9EB1AADF05A00984988 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0705D9EC1AADF05A00984988 /* Reminder+Functions.h */,
+				0705D9ED1AADF05A00984988 /* Reminder+Functions.m */,
+				0705D9EE1AADF05A00984988 /* Reminder.h */,
+				0705D9EF1AADF05A00984988 /* Reminder.m */,
+				0705D9F01AADF05A00984988 /* RemindTime.h */,
+				0705D9F11AADF05A00984988 /* RemindTime.m */,
+				0705D9F21AADF05A00984988 /* Todo+Functions.h */,
+				0705D9F31AADF05A00984988 /* Todo+Functions.m */,
+				0705D9F41AADF05A00984988 /* Todo.h */,
+				0705D9F51AADF05A00984988 /* Todo.m */,
+				0705D9F61AADF05A00984988 /* TodoDate+Functions.h */,
+				0705D9F71AADF05A00984988 /* TodoDate+Functions.m */,
+				0705D9F81AADF05A00984988 /* TodoDate.h */,
+				0705D9F91AADF05A00984988 /* TodoDate.m */,
+				0705D9FA1AADF05A00984988 /* TodoToday.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0705D9FC1AADF05A00984988 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07B9C29C1AB356DF00BA6F1B /* Sounds */,
+				07B9C2791AB356CF00BA6F1B /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0705DA0F1AADF05A00984988 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0705DA371AADF05A00984988 /* Defines */,
+				0705DA471AADF05A00984988 /* UIControl */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0705DA371AADF05A00984988 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				0705DA381AADF05A00984988 /* KNDefines.h */,
+				0705DA391AADF05A00984988 /* KNFonts.h */,
+				0705DA3A1AADF05A00984988 /* KNRequestNotifications.h */,
+				0705DA3B1AADF05A00984988 /* Macros.h */,
+				0705DA3C1AADF05A00984988 /* readme.txt */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		0705DA471AADF05A00984988 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				0705DAC31AADF05A00984988 /* Toast */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		0705DAC31AADF05A00984988 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				0705DAC41AADF05A00984988 /* Toast+UIView.h */,
+				0705DAC51AADF05A00984988 /* Toast+UIView.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		0705DAC61AADF05A00984988 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0705DAC71AADF05A00984988 /* TodoTableViewCell.h */,
+				0705DAC81AADF05A00984988 /* TodoTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07B9C2791AB356CF00BA6F1B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				078D28041AB5FD3D00E281B7 /* bk_forward_normal.png */,
+				07B9C2AF1AB4B19500BA6F1B /* bk_check.png */,
+				07B9C27A1AB356CF00BA6F1B /* bell.png */,
+				07B9C27B1AB356CF00BA6F1B /* bk_addfutureevent.png */,
+				07B9C27C1AB356CF00BA6F1B /* bk_back_normal.png */,
+				07B9C27D1AB356CF00BA6F1B /* bk_back_normal@2x.png */,
+				07B9C27E1AB356CF00BA6F1B /* bk_back_sel.png */,
+				07B9C27F1AB356CF00BA6F1B /* bk_btn_next.png */,
+				07B9C2801AB356CF00BA6F1B /* bk_check_off.png */,
+				07B9C2811AB356CF00BA6F1B /* bk_check_on.png */,
+				07B9C2821AB356CF00BA6F1B /* bk_menu_normal.png */,
+				07B9C2831AB356CF00BA6F1B /* bk_plus_normal.psd */,
+				07B9C2841AB356CF00BA6F1B /* bk_plus_normal@2x.png */,
+				07B9C2851AB356CF00BA6F1B /* btn_getstarted.png */,
+				07B9C2861AB356CF00BA6F1B /* icon.png */,
+				07B9C2871AB356CF00BA6F1B /* img_clock.png */,
+				07B9C2881AB356CF00BA6F1B /* logo.png */,
+				07B9C2891AB356CF00BA6F1B /* radio_checked.png */,
+				07B9C28A1AB356CF00BA6F1B /* radio_unchecked.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		07B9C29C1AB356DF00BA6F1B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				07B9C29D1AB356DF00BA6F1B /* Beep-SoundBible.wav */,
+				07B9C29E1AB356DF00BA6F1B /* Bleep-SoundBible.wav */,
+				07B9C29F1AB356DF00BA6F1B /* Car Door Open And Alarm-SoundBible.wav */,
+				07B9C2A01AB356DF00BA6F1B /* Computer_Magic-Microsift.wav */,
+				07B9C2A11AB356DF00BA6F1B /* Metronome-SoundBible.wav */,
+				07B9C2A21AB356DF00BA6F1B /* Realistic_Punch-Mark_DiAngelo.wav */,
+				07B9C2A31AB356DF00BA6F1B /* Temple Bell-SoundBible.wav */,
+				07B9C2A41AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9009430F7A7C242D08D9E134 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D92C2D89CF023A61DE25F207 /* Pods.debug.xcconfig */,
+				2D1B44DBD53E7BC5024EDEB5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0705D9471AADF01400984988 /* TodoToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0705D96E1AADF01400984988 /* Build configuration list for PBXNativeTarget "TodoToday" */;
+			buildPhases = (
+				2A801A4BE45DF993DCF7D4A2 /* Check Pods Manifest.lock */,
+				0705D9441AADF01400984988 /* Sources */,
+				0705D9451AADF01400984988 /* Frameworks */,
+				0705D9461AADF01400984988 /* Resources */,
+				003742BF55DD0DC85D8B3D87 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodoToday;
+			productName = TodoToday;
+			productReference = 0705D9481AADF01400984988 /* TodoToday.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0705D9631AADF01400984988 /* TodoTodayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0705D9711AADF01400984988 /* Build configuration list for PBXNativeTarget "TodoTodayTests" */;
+			buildPhases = (
+				0705D9601AADF01400984988 /* Sources */,
+				0705D9611AADF01400984988 /* Frameworks */,
+				0705D9621AADF01400984988 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0705D9661AADF01400984988 /* PBXTargetDependency */,
+			);
+			name = TodoTodayTests;
+			productName = TodoTodayTests;
+			productReference = 0705D9641AADF01400984988 /* TodoTodayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0705D9401AADF01400984988 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Shenyang Damy Infotec Co.Ltd";
+				TargetAttributes = {
+					0705D9471AADF01400984988 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					0705D9631AADF01400984988 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 0705D9471AADF01400984988;
+					};
+				};
+			};
+			buildConfigurationList = 0705D9431AADF01400984988 /* Build configuration list for PBXProject "TodoToday" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0705D93F1AADF01400984988;
+			productRefGroup = 0705D9491AADF01400984988 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0705D9471AADF01400984988 /* TodoToday */,
+				0705D9631AADF01400984988 /* TodoTodayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0705D9461AADF01400984988 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0705DAD01AADF05A00984988 /* display_botton_down.png in Resources */,
+				07B9C2941AB356D000BA6F1B /* bk_plus_normal.psd in Resources */,
+				0705DACF1AADF05A00984988 /* display_botton.png in Resources */,
+				078D28051AB5FD3D00E281B7 /* bk_forward_normal.png in Resources */,
+				0705DACB1AADF05A00984988 /* LaunchScreen.xib in Resources */,
+				07B9C2961AB356D000BA6F1B /* btn_getstarted.png in Resources */,
+				07B9C29B1AB356D000BA6F1B /* radio_unchecked.png in Resources */,
+				07B9C2991AB356D000BA6F1B /* logo.png in Resources */,
+				07B9C2A61AB356DF00BA6F1B /* Bleep-SoundBible.wav in Resources */,
+				0705DAE31AADF05A00984988 /* Images.xcassets in Resources */,
+				07B9C28C1AB356D000BA6F1B /* bk_addfutureevent.png in Resources */,
+				07B9C28E1AB356D000BA6F1B /* bk_back_normal@2x.png in Resources */,
+				07B9C2AC1AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav in Resources */,
+				0705DACC1AADF05A00984988 /* Main.storyboard in Resources */,
+				0705DB1E1AADF05A00984988 /* readme.txt in Resources */,
+				07B9C2901AB356D000BA6F1B /* bk_btn_next.png in Resources */,
+				0705DAD11AADF05A00984988 /* title_bar.png in Resources */,
+				07B9C28F1AB356D000BA6F1B /* bk_back_sel.png in Resources */,
+				07B9C2971AB356D000BA6F1B /* icon.png in Resources */,
+				07B9C2921AB356D000BA6F1B /* bk_check_on.png in Resources */,
+				07B9C2A71AB356DF00BA6F1B /* Car Door Open And Alarm-SoundBible.wav in Resources */,
+				07B9C28B1AB356D000BA6F1B /* bell.png in Resources */,
+				07B9C2B01AB4B19500BA6F1B /* bk_check.png in Resources */,
+				07B9C2A51AB356DF00BA6F1B /* Beep-SoundBible.wav in Resources */,
+				07B9C2931AB356D000BA6F1B /* bk_menu_normal.png in Resources */,
+				07B9C2A91AB356DF00BA6F1B /* Metronome-SoundBible.wav in Resources */,
+				07B9C2AA1AB356DF00BA6F1B /* Realistic_Punch-Mark_DiAngelo.wav in Resources */,
+				07B9C2911AB356D000BA6F1B /* bk_check_off.png in Resources */,
+				07B9C2A81AB356DF00BA6F1B /* Computer_Magic-Microsift.wav in Resources */,
+				07B9C28D1AB356D000BA6F1B /* bk_back_normal.png in Resources */,
+				07B9C2951AB356D000BA6F1B /* bk_plus_normal@2x.png in Resources */,
+				07B9C2981AB356D000BA6F1B /* img_clock.png in Resources */,
+				07B9C29A1AB356D000BA6F1B /* radio_checked.png in Resources */,
+				07B9C2AB1AB356DF00BA6F1B /* Temple Bell-SoundBible.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0705D9621AADF01400984988 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003742BF55DD0DC85D8B3D87 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A801A4BE45DF993DCF7D4A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0705D9441AADF01400984988 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0705DAD61AADF05A00984988 /* AddFutureEventViewController.m in Sources */,
+				071341491AB201BC0079F385 /* SoundListViewController.m in Sources */,
+				0705DAD41AADF05A00984988 /* SuperViewController.m in Sources */,
+				0705DADD1AADF05A00984988 /* StartStepOneViewController.m in Sources */,
+				0705DAFA1AADF05A00984988 /* Todo+Functions.m in Sources */,
+				0705DB741AADF05A00984988 /* TodoTableViewCell.m in Sources */,
+				0718CE9F1AAF55F400D2AE80 /* EditEventViewController.m in Sources */,
+				078D28081AB605F900E281B7 /* GlobalFunc.m in Sources */,
+				0705DAF81AADF05A00984988 /* Reminder.m in Sources */,
+				0705DAD51AADF05A00984988 /* Config.m in Sources */,
+				0705DAFB1AADF05A00984988 /* Todo.m in Sources */,
+				0705DAF91AADF05A00984988 /* RemindTime.m in Sources */,
+				0705DACD1AADF05A00984988 /* Common.m in Sources */,
+				0705DADF1AADF05A00984988 /* StartStepTwoViewController.m in Sources */,
+				0705DADE1AADF05A00984988 /* StartStepThreeViewController.m in Sources */,
+				0705DAD31AADF05A00984988 /* SuperTableViewController.m in Sources */,
+				0705DAF61AADF05A00984988 /* main.m in Sources */,
+				0705DACA1AADF05A00984988 /* AppDelegate.m in Sources */,
+				0705DACE1AADF05A00984988 /* CustomDatePickerViewController.m in Sources */,
+				0705DAFD1AADF05A00984988 /* TodoDate.m in Sources */,
+				0705DAF71AADF05A00984988 /* Reminder+Functions.m in Sources */,
+				0705DB731AADF05A00984988 /* Toast+UIView.m in Sources */,
+				0705DAD81AADF05A00984988 /* CongratulationsViewController.m in Sources */,
+				0705DAFE1AADF05A00984988 /* TodoToday.xcdatamodeld in Sources */,
+				0705DAE11AADF05A00984988 /* TodayGoalsViewController.m in Sources */,
+				0705DAE01AADF05A00984988 /* StartViewController.m in Sources */,
+				0705DADC1AADF05A00984988 /* StartStepCompleteViewController.m in Sources */,
+				0705DAC91AADF05A00984988 /* TodoDateReminder.m in Sources */,
+				0705DAFC1AADF05A00984988 /* TodoDate+Functions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0705D9601AADF01400984988 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0705D96B1AADF01400984988 /* TodoTodayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0705D9661AADF01400984988 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0705D9471AADF01400984988 /* TodoToday */;
+			targetProxy = 0705D9651AADF01400984988 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0705D97A1AADF05A00984988 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0705D97B1AADF05A00984988 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		0705D97C1AADF05A00984988 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0705D97D1AADF05A00984988 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0705D96C1AADF01400984988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0705D96D1AADF01400984988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0705D96F1AADF01400984988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D92C2D89CF023A61DE25F207 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "TodoToday-Prefix.pch";
+				INFOPLIST_FILE = TodoToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		0705D9701AADF01400984988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D1B44DBD53E7BC5024EDEB5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "TodoToday-Prefix.pch";
+				INFOPLIST_FILE = TodoToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		0705D9721AADF01400984988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodoTodayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoToday.app/TodoToday";
+			};
+			name = Debug;
+		};
+		0705D9731AADF01400984988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodoTodayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoToday.app/TodoToday";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0705D9431AADF01400984988 /* Build configuration list for PBXProject "TodoToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0705D96C1AADF01400984988 /* Debug */,
+				0705D96D1AADF01400984988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0705D96E1AADF01400984988 /* Build configuration list for PBXNativeTarget "TodoToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0705D96F1AADF01400984988 /* Debug */,
+				0705D9701AADF01400984988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0705D9711AADF01400984988 /* Build configuration list for PBXNativeTarget "TodoTodayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0705D9721AADF01400984988 /* Debug */,
+				0705D9731AADF01400984988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0705D9FA1AADF05A00984988 /* TodoToday.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0705D9FB1AADF05A00984988 /* TodoToday.xcdatamodel */,
+			);
+			currentVersion = 0705D9FB1AADF05A00984988 /* TodoToday.xcdatamodel */;
+			path = TodoToday.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0705D9401AADF01400984988 /* Project object */;
+}

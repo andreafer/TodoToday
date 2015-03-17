@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Reminder" representedClassName="Reminder" syncable="YES">
+        <attribute name="alarm_sound" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remind_weekday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="todo_completed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="todo_total" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="time" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RemindTime" syncable="YES"/>
+    </entity>
+    <entity name="RemindTime" representedClassName="RemindTime" syncable="YES">
+        <attribute name="hour" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="minute" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Todo" representedClassName="Todo" syncable="YES">
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="date" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TodoDate" syncable="YES"/>
+    </entity>
+    <entity name="TodoDate" representedClassName="TodoDate" syncable="YES">
+        <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RemindTime" positionX="-36" positionY="36" width="128" height="75"/>
+        <element name="Todo" positionX="-36" positionY="36" width="128" height="88"/>
+        <element name="TodoDate" positionX="-27" positionY="54" width="128" height="88"/>
+        <element name="Reminder" positionX="-36" positionY="9" width="128" height="120"/>
+    </elements>
+</model>

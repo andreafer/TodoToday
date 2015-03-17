@@ -1,0 +1,32 @@
+PODS:
+  - iRate (1.9)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core (= 2.2)
+  - MagicalRecord/Core (2.2)
+  - MMDrawerController (0.5.1):
+    - MMDrawerController/Core (= 0.5.1)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.1)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.1)
+    - MMDrawerController/Subclass (= 0.5.1)
+  - MMDrawerController/Core (0.5.1)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.1):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.1):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.1):
+    - MMDrawerController/Core
+  - RZSquaresLoading (1.0)
+
+DEPENDENCIES:
+  - iRate
+  - MagicalRecord (~> 2.2)
+  - MMDrawerController
+  - RZSquaresLoading
+
+SPEC CHECKSUMS:
+  iRate: 2f92828ffc9cac55bb34df1ede3e9c1616c1ad49
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  MMDrawerController: faf577335cedfbc868079fd396e625c9ec183fc5
+  RZSquaresLoading: 21dcb90708f7f832abb89a0764f155ac3aacf6c0
+
+COCOAPODS: 0.35.0
