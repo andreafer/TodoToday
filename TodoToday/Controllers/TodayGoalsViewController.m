@@ -45,11 +45,17 @@ NSMutableArray *todos = nil;
         }
     }
     [self processIfTableIsEmpty];
-    
     //Update all reminders because Total Todo Num and Completed Tood Num have to be updated for the next remind days.
     [[[TodoDateReminder alloc] init] updateReminders];
     
     [super viewDidLoad];
+
+    if( [_tableView numberOfRowsInSection:0] > [Common getMaxGoals] )
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:APP_TITLE message:@"You have exceeded number of ToDos today. Please delete/completed some items or increase the Maximum." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alertView setTag:3];
+        [alertView show];
+    }
 }
 
 #pragma mark - Methods
@@ -79,6 +85,8 @@ NSMutableArray *todos = nil;
 #pragma mark - UIButton Actions
 
 - (IBAction)onCompletedButtonClicked:(id)sender {
+    if( [_tableView numberOfRowsInSection:0] )
+    
     if( ![self isAnyItemSelected] )
     {
         showToast(NO_SELECTED_ITEM);
@@ -104,6 +112,20 @@ NSMutableArray *todos = nil;
 
 #pragma mark - UINavigationController
 
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if( [identifier isEqualToString:@"segueToAddEvent"] )
+    {
+        if( [_tableView numberOfRowsInSection:0] > [Common getMaxGoals] )
+        {
+            showToast(@"You have exceeded number of ToDos today. Please delete/completed some items or increase the Maximum.");
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if( [segue.identifier isEqualToString:@"segueToEditEvent"])
@@ -124,8 +146,8 @@ NSMutableArray *todos = nil;
 {
     NSUInteger todoNumber = [todos count];
     
-    if( todoNumber > [Common getMaxGoals] )
-        todoNumber = [Common getMaxGoals];
+//    if( todoNumber > [Common getMaxGoals] )
+//        todoNumber = [Common getMaxGoals];
     
     return todoNumber;
 }
@@ -133,7 +155,7 @@ NSMutableArray *todos = nil;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TodoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    [cell.lblItemNumber setText:[NSString stringWithFormat:@"%ld.", indexPath.row + 1]] ;
+    [cell.lblItemNumber setText:[NSString stringWithFormat:@"%d.", indexPath.row + 1]] ;
     Todo *todo = [todos objectAtIndex:indexPath.row];
     [cell.lblItemContent setText:todo.title];
     return cell;

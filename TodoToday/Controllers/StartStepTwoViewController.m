@@ -27,6 +27,9 @@ NSDate *thirdTime = nil;
 {
     [super viewDidLoad];
     NSMutableArray *timeArray = [Common getRemindDates];
+    firstTime = nil;
+    secondTime = nil;
+    thirdTime = nil;
     for( int i = 0; i < [timeArray count]; i++ )
     {
         NSDate *date = [timeArray objectAtIndex:i];
@@ -273,6 +276,23 @@ NSDate *thirdTime = nil;
 }
 
 - (void)dismissDatePicker:(id)sender {
+    [Common clearRemindDates];
+    if( firstTime != nil )
+    {
+        firstTime = [self getDateFromAmPm:firstTime timeindex:0];
+        [Common addRemindDate:firstTime];
+    }
+    if( secondTime != nil )
+    {
+        secondTime = [self getDateFromAmPm:secondTime timeindex:1];
+        [Common addRemindDate:secondTime];
+    }
+    if( thirdTime != nil )
+    {
+        thirdTime = [self getDateFromAmPm:thirdTime timeindex:2];
+        [Common addRemindDate:thirdTime];
+    }
+    
     CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height, 320, 44);
     CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height+44, 320, 216);
     [UIView beginAnimations:@"MoveOut" context:nil];

@@ -44,5 +44,6 @@
 {
     SoundListViewController *soundViewController = (SoundListViewController*)segue.sourceViewController;
     _txtSoundName.text = soundViewController.soundName;
+    [Common setAlarmSound:_txtSoundName.text];
 }
 @end

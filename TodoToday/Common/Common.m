@@ -127,7 +127,7 @@ double          _curPosLng = 0;
     NSDate *today = [NSDate date];
     NSDate *yesterday = [self getYesterdayDate];
     NSMutableArray *yesterdayTodos = [[NSMutableArray alloc] init];
-    NSInteger nNumOfTodoToday = 0, nAvailable = 0;
+    NSInteger nNumOfTodoToday = 0/*, nAvailable = 0*/;
     
     for( Todo *todo in [Todo MR_findAll] )
     {
@@ -140,7 +140,7 @@ double          _curPosLng = 0;
             [yesterdayTodos addObject:todo];
         }
     }
-    
+/*
     nAvailable = [self getMaxGoals] - nNumOfTodoToday;
     
     if( nAvailable > 0 )
@@ -154,7 +154,14 @@ double          _curPosLng = 0;
         NSManagedObjectContext *localContext = [NSManagedObjectContext MR_defaultContext];
         [localContext MR_saveToPersistentStoreAndWait];
     }
-    
+*/
+    for( int i = 0; i < [yesterdayTodos count]; i++ )
+    {
+        Todo *item = [yesterdayTodos objectAtIndex:i];
+        [item setTodoDate:today];
+    }
+    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_defaultContext];
+    [localContext MR_saveToPersistentStoreAndWait];
 }
 
 + (NSDate*) getYesterdayDate

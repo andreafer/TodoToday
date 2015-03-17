@@ -13,6 +13,7 @@
 #import "Macros.h"
 #import "ConstString.h"
 #import "TodoDateReminder.h"
+#import "Common.h"
 
 @implementation EditEventViewController
 
@@ -71,22 +72,21 @@ NSDate *todo_Date = nil;
             showToast(@"Please input the ToDo title.");
             return NO;
         }
-        /*
+        
         int nNumberOfTodoOnDate = 0;
         
         for( Todo *todo in [Todo MR_findAll]) {
-            if( [todo isOnDate:todo_Date])
+            if( [todo isOnDate:todo_Date] && [todo.isCompleted boolValue] == NO)
             {
                 nNumberOfTodoOnDate++;
             }
         }
         
-        if( nNumberOfTodoOnDate >= [Config loadTodoCount] )
+        if( nNumberOfTodoOnDate >= [Common getMaxGoals] )
         {
-         showToast(@"You have already maximum number of ToDo items on your selected day. Please increase your Maximum in the setup.");
+            showToast(@"You have already maximum number of ToDo items on your selected day. Please increase your Maximum in the setup.");
             return NO;
-        }*/
-        
+        }
     }
     return YES;
 }

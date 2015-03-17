@@ -55,8 +55,9 @@
     
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"dr.sqlite"];
     
+    
 //    UILocalNotification *notification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-    if ( true /*notification != nil || application.applicationIconBadgeNumber != 0*/ ) {
+    if ( [[NSUserDefaults standardUserDefaults] boolForKey:@"everLaunched"] /*notification != nil || application.applicationIconBadgeNumber != 0*/ ) {
         // Set icon badge number to zero
         application.applicationIconBadgeNumber = 0;
         

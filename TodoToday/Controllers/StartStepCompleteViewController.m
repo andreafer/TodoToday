@@ -65,8 +65,8 @@ NSMutableArray *todosOnDate = nil;
 {
     NSUInteger todoNumber = [todosOnDate count];
     
-    if( todoNumber > [Common getMaxGoals] )
-        todoNumber = [Common getMaxGoals];
+//    if( todoNumber > [Common getMaxGoals] )
+//        todoNumber = [Common getMaxGoals];
     
     return todoNumber;
 }
