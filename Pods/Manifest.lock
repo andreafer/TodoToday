@@ -24,9 +24,9 @@ DEPENDENCIES:
   - RZSquaresLoading
 
 SPEC CHECKSUMS:
-  iRate: 2f92828ffc9cac55bb34df1ede3e9c1616c1ad49
-  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
-  MMDrawerController: faf577335cedfbc868079fd396e625c9ec183fc5
-  RZSquaresLoading: 21dcb90708f7f832abb89a0764f155ac3aacf6c0
+  iRate: a411a3144588d30af68d3d71ad3c5950f8ecf53c
+  MagicalRecord: f8a56bb87ab6552f20c4bb8681a1958a197ea3cd
+  MMDrawerController: 8064ca5c6e7981c5f9c4c15d178add1c18c2bcef
+  RZSquaresLoading: a1c594f2c60eb579fb060763000d10d86ef1bf61
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.37.2

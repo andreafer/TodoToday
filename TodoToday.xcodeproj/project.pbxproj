@@ -559,6 +559,7 @@
 				TargetAttributes = {
 					0705D9471AADF01400984988 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 58C8K4885N;
 					};
 					0705D9631AADF01400984988 = {
 						CreatedOnToolsVersion = 6.1;
@@ -830,7 +831,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "TodoToday-Prefix.pch";
 				INFOPLIST_FILE = TodoToday/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -847,7 +848,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "TodoToday-Prefix.pch";
 				INFOPLIST_FILE = TodoToday/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
