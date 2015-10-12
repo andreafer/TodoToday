@@ -73,6 +73,7 @@
 		07B9C2AC1AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2A41AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav */; };
 		07B9C2B01AB4B19500BA6F1B /* bk_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2AF1AB4B19500BA6F1B /* bk_check.png */; };
 		232293A876AB17EDA015BCEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAD882ACE75EAF17DF45310 /* libPods.a */; };
+		48BACFA31BCB8C80002846E7 /* Remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BACFA21BCB8C80002846E7 /* Remove.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +190,7 @@
 		07B9C2A41AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Woosh-Mark_DiAngelo.wav"; sourceTree = "<group>"; };
 		07B9C2AF1AB4B19500BA6F1B /* bk_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_check.png; sourceTree = "<group>"; };
 		2D1B44DBD53E7BC5024EDEB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		48BACFA21BCB8C80002846E7 /* Remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Remove.png; sourceTree = "<group>"; };
 		5BAD882ACE75EAF17DF45310 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92C2D89CF023A61DE25F207 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -461,6 +463,7 @@
 		07B9C2791AB356CF00BA6F1B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				48BACFA21BCB8C80002846E7 /* Remove.png */,
 				078D28041AB5FD3D00E281B7 /* bk_forward_normal.png */,
 				07B9C2AF1AB4B19500BA6F1B /* bk_check.png */,
 				07B9C27A1AB356CF00BA6F1B /* bell.png */,
@@ -599,6 +602,7 @@
 				07B9C2961AB356D000BA6F1B /* btn_getstarted.png in Resources */,
 				07B9C29B1AB356D000BA6F1B /* radio_unchecked.png in Resources */,
 				07B9C2991AB356D000BA6F1B /* logo.png in Resources */,
+				48BACFA31BCB8C80002846E7 /* Remove.png in Resources */,
 				07B9C2A61AB356DF00BA6F1B /* Bleep-SoundBible.wav in Resources */,
 				0705DAE31AADF05A00984988 /* Images.xcassets in Resources */,
 				07B9C28C1AB356D000BA6F1B /* bk_addfutureevent.png in Resources */,

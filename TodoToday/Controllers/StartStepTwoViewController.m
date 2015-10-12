@@ -355,4 +355,24 @@ NSDate *thirdTime = nil;
     [UIView commitAnimations];
 }
 
+
+- (IBAction)OnFirstTimeOffButton:(id)sender {
+    [_radFirstTimeAM setSelected:NO];
+    [_radFirstTimePM setSelected:NO];
+    firstTime=nil;
+}
+
+- (IBAction)OnSecondButtonTimeOffButton:(id)sender {
+    [_radSecondTimeAM setSelected:NO];
+    [_radSecondTimePM setSelected:NO];
+    secondTime=nil;
+    
+}
+
+- (IBAction)OnThirdTimeOffButton:(id)sender {
+    [_radThirdTimeAM setSelected:NO];
+    [_radThirdTimePM setSelected:NO];
+    thirdTime=nil;
+
+}
 @end

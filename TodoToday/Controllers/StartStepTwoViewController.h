@@ -23,6 +23,14 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnSecondTime;
 @property (weak, nonatomic) IBOutlet UIButton *btnThirdTime;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnFirstTimeOffButton;
+@property (weak, nonatomic) IBOutlet UIButton *btnSecondTimeOffButton;
+- (IBAction)OnFirstTimeOffButton:(id)sender;
+- (IBAction)OnSecondButtonTimeOffButton:(id)sender;
+
+- (IBAction)OnThirdTimeOffButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnThirdTimeOffButton;
+
 - (IBAction)onFirstTimeAM:(id)sender;
 - (IBAction)onFirstTimePM:(id)sender;
 - (IBAction)onSecondTimeAM:(id)sender;
@@ -31,5 +39,7 @@
 - (IBAction)onThirdTimePM:(id)sender;
 - (IBAction)onNextButton:(id)sender;
 - (IBAction)onTimeButton:(id)sender;
+
+
 
 @end
