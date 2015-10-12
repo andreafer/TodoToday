@@ -74,6 +74,7 @@
 		07B9C2B01AB4B19500BA6F1B /* bk_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2AF1AB4B19500BA6F1B /* bk_check.png */; };
 		232293A876AB17EDA015BCEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAD882ACE75EAF17DF45310 /* libPods.a */; };
 		48BACFA31BCB8C80002846E7 /* Remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BACFA21BCB8C80002846E7 /* Remove.png */; settings = {ASSET_TAGS = (); }; };
+		48BACFA61BCBAF91002846E7 /* DayDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BACFA51BCBAF91002846E7 /* DayDatePickerView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +192,8 @@
 		07B9C2AF1AB4B19500BA6F1B /* bk_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_check.png; sourceTree = "<group>"; };
 		2D1B44DBD53E7BC5024EDEB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		48BACFA21BCB8C80002846E7 /* Remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Remove.png; sourceTree = "<group>"; };
+		48BACFA41BCBAF91002846E7 /* DayDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DayDatePickerView.h; path = ../../../../../Users/bingzhejin/Desktop/DayDatePickerView.h; sourceTree = "<group>"; };
+		48BACFA51BCBAF91002846E7 /* DayDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DayDatePickerView.m; path = ../../../../../Users/bingzhejin/Desktop/DayDatePickerView.m; sourceTree = "<group>"; };
 		5BAD882ACE75EAF17DF45310 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92C2D89CF023A61DE25F207 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -309,6 +312,8 @@
 		0705D9821AADF05A00984988 /* CustomDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				48BACFA41BCBAF91002846E7 /* DayDatePickerView.h */,
+				48BACFA51BCBAF91002846E7 /* DayDatePickerView.m */,
 				0705D9831AADF05A00984988 /* CustomDatePickerViewController.h */,
 				0705D9841AADF05A00984988 /* CustomDatePickerViewController.m */,
 				0705D9851AADF05A00984988 /* display_botton.png */,
@@ -692,6 +697,7 @@
 				0705DAFB1AADF05A00984988 /* Todo.m in Sources */,
 				0705DAF91AADF05A00984988 /* RemindTime.m in Sources */,
 				0705DACD1AADF05A00984988 /* Common.m in Sources */,
+				48BACFA61BCBAF91002846E7 /* DayDatePickerView.m in Sources */,
 				0705DADF1AADF05A00984988 /* StartStepTwoViewController.m in Sources */,
 				0705DADE1AADF05A00984988 /* StartStepThreeViewController.m in Sources */,
 				0705DAD31AADF05A00984988 /* SuperTableViewController.m in Sources */,
