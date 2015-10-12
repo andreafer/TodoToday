@@ -1,0 +1,86 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "82FA6DD2BA40AEF3B393D894D36475505550EF03",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "32907E9024C1913BB4D2F5BBD5FEDE54D41AEDE8" : 0,
+    "82FA6DD2BA40AEF3B393D894D36475505550EF03" : 0,
+    "BC706427685CDAE2A6F508334921A6B75A85922F" : 0,
+    "DB5C90D5A4111291E9C7B081743EC3A0775DAC34" : 0,
+    "12DF0DC01B058981B44E485E8F941BE5F444D2B3" : 0,
+    "21948BBEE75D1E61FF42EB5E4E75D4D4653E33EF" : 0,
+    "8BD2398E001188D00A179CE4C0E4873521942CF2" : 0,
+    "4C5A3855F5DFB054C05F4BF707BF79F478023806" : 0,
+    "5F4B66C3081EA3F52C983B3A2C7B3476F57EC373" : 0,
+    "91E842DF519D04F4208FD136AAA4CA863667C04A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D496809F-D47C-4E60-86E2-3D3C4310D75E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "32907E9024C1913BB4D2F5BBD5FEDE54D41AEDE8" : "Calorie%20Cloud\/kidpower_ios\/",
+    "82FA6DD2BA40AEF3B393D894D36475505550EF03" : "TodoToday\/",
+    "BC706427685CDAE2A6F508334921A6B75A85922F" : "SalezToolz\/saleztoolz-ipad\/",
+    "DB5C90D5A4111291E9C7B081743EC3A0775DAC34" : "RoverTown\/rovertown_ios\/",
+    "12DF0DC01B058981B44E485E8F941BE5F444D2B3" : "OoyalaIMA\/",
+    "21948BBEE75D1E61FF42EB5E4E75D4D4653E33EF" : "SantaCall\/",
+    "8BD2398E001188D00A179CE4C0E4873521942CF2" : "PrivateTexting\/",
+    "4C5A3855F5DFB054C05F4BF707BF79F478023806" : "ListApp\/",
+    "5F4B66C3081EA3F52C983B3A2C7B3476F57EC373" : "Calorie%20Cloud\/cc_ios\/",
+    "91E842DF519D04F4208FD136AAA4CA863667C04A" : "TodoToday\/Xamarin\/AAHMRC\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TodoToday",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TodoToday.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fubotv\/ooyala-IMA-SDK-phonegap-wrapper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "12DF0DC01B058981B44E485E8F941BE5F444D2B3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/mathrawka\/santacall-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21948BBEE75D1E61FF42EB5E4E75D4D4653E33EF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/donaldpae\/kidpower_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "32907E9024C1913BB4D2F5BBD5FEDE54D41AEDE8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/fenghuang86\/listapp_lite.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C5A3855F5DFB054C05F4BF707BF79F478023806"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/donaldpae\/cc_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5F4B66C3081EA3F52C983B3A2C7B3476F57EC373"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andreafer\/TodoToday.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82FA6DD2BA40AEF3B393D894D36475505550EF03"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/mathrawka\/privatetexting-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8BD2398E001188D00A179CE4C0E4873521942CF2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/weizhang88\/aahmrc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "91E842DF519D04F4208FD136AAA4CA863667C04A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HanYongMa\/saleztoolz-ipad",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC706427685CDAE2A6F508334921A6B75A85922F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rezbuilt\/rovertown_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DB5C90D5A4111291E9C7B081743EC3A0775DAC34"
+    }
+  ]
+}
