@@ -22,6 +22,7 @@
 + (void) clearRemindWeekdays;
 + (NSMutableArray*) getRemindWeekdays;
 
++ (void) removeRemindDate:(NSUInteger)intDate;
 + (void) addRemindDate : (NSDate*)date;
 + (void) clearRemindDates;
 + (NSMutableArray*) getRemindDates;

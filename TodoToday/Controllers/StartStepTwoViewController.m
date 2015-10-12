@@ -13,6 +13,7 @@
 #import "Macros.h"
 #import "Toast+UIView.h"
 #import "ConstString.h"
+#import "Common.h"
 
 @implementation StartStepTwoViewController
 
@@ -360,19 +361,27 @@ NSDate *thirdTime = nil;
     [_radFirstTimeAM setSelected:NO];
     [_radFirstTimePM setSelected:NO];
     firstTime=nil;
+    [Common removeRemindDate:(0)];
+    [_btnFirstTime setTitle:(@" _ : _ _ ") forState:UIControlStateNormal];
+
 }
 
 - (IBAction)OnSecondButtonTimeOffButton:(id)sender {
     [_radSecondTimeAM setSelected:NO];
     [_radSecondTimePM setSelected:NO];
     secondTime=nil;
-    
+    [Common removeRemindDate:(1)];
+    [_btnSecondTime setTitle:(@" _ : _ _ ") forState:UIControlStateNormal];
 }
 
 - (IBAction)OnThirdTimeOffButton:(id)sender {
     [_radThirdTimeAM setSelected:NO];
     [_radThirdTimePM setSelected:NO];
     thirdTime=nil;
+    [Common removeRemindDate:(2)];
+    [_btnThirdTime setTitle:(@" _ : _ _ ") forState:UIControlStateNormal];
+
+
 
 }
 @end

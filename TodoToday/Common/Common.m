@@ -84,6 +84,12 @@ double          _curPosLng = 0;
     [_pRemindWeekdays removeAllObjects];
 }
 
++ (void) removeRemindDate:(NSUInteger)intDate{
+    //( if ([_pRemindDates.c
+    [_pRemindDates removeObjectAtIndex:(intDate)];
+    
+}
+
 + (void) addRemindDate:(NSDate *)date
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
