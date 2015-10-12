@@ -13,6 +13,5 @@
 {
     
 }
-@property (weak, nonatomic) IBOutlet UILabel *txtSuccessedItems;
 
 @end
