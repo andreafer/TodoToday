@@ -55,7 +55,6 @@
 		07B9C2911AB356D000BA6F1B /* bk_check_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2801AB356CF00BA6F1B /* bk_check_off.png */; };
 		07B9C2921AB356D000BA6F1B /* bk_check_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2811AB356CF00BA6F1B /* bk_check_on.png */; };
 		07B9C2931AB356D000BA6F1B /* bk_menu_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2821AB356CF00BA6F1B /* bk_menu_normal.png */; };
-		07B9C2941AB356D000BA6F1B /* bk_plus_normal.psd in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2831AB356CF00BA6F1B /* bk_plus_normal.psd */; };
 		07B9C2951AB356D000BA6F1B /* bk_plus_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2841AB356CF00BA6F1B /* bk_plus_normal@2x.png */; };
 		07B9C2961AB356D000BA6F1B /* btn_getstarted.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2851AB356CF00BA6F1B /* btn_getstarted.png */; };
 		07B9C2971AB356D000BA6F1B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2861AB356CF00BA6F1B /* icon.png */; };
@@ -73,6 +72,7 @@
 		07B9C2AC1AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2A41AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav */; };
 		07B9C2B01AB4B19500BA6F1B /* bk_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B9C2AF1AB4B19500BA6F1B /* bk_check.png */; };
 		232293A876AB17EDA015BCEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAD882ACE75EAF17DF45310 /* libPods.a */; };
+		486EF2921BD019FF00A0C05D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486EF2901BD019FF00A0C05D /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
 		48BACFA31BCB8C80002846E7 /* Remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BACFA21BCB8C80002846E7 /* Remove.png */; settings = {ASSET_TAGS = (); }; };
 		48BACFA61BCBAF91002846E7 /* DayDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BACFA51BCBAF91002846E7 /* DayDatePickerView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -173,7 +173,6 @@
 		07B9C2801AB356CF00BA6F1B /* bk_check_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_check_off.png; sourceTree = "<group>"; };
 		07B9C2811AB356CF00BA6F1B /* bk_check_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_check_on.png; sourceTree = "<group>"; };
 		07B9C2821AB356CF00BA6F1B /* bk_menu_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_menu_normal.png; sourceTree = "<group>"; };
-		07B9C2831AB356CF00BA6F1B /* bk_plus_normal.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = bk_plus_normal.psd; sourceTree = "<group>"; };
 		07B9C2841AB356CF00BA6F1B /* bk_plus_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bk_plus_normal@2x.png"; sourceTree = "<group>"; };
 		07B9C2851AB356CF00BA6F1B /* btn_getstarted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_getstarted.png; sourceTree = "<group>"; };
 		07B9C2861AB356CF00BA6F1B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -191,6 +190,7 @@
 		07B9C2A41AB356DF00BA6F1B /* Woosh-Mark_DiAngelo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Woosh-Mark_DiAngelo.wav"; sourceTree = "<group>"; };
 		07B9C2AF1AB4B19500BA6F1B /* bk_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_check.png; sourceTree = "<group>"; };
 		2D1B44DBD53E7BC5024EDEB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		486EF2911BD019FF00A0C05D /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/Default-568h@2x.png"; sourceTree = "<group>"; };
 		48BACFA21BCB8C80002846E7 /* Remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Remove.png; sourceTree = "<group>"; };
 		48BACFA41BCBAF91002846E7 /* DayDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DayDatePickerView.h; path = ../../../../../Users/bingzhejin/Desktop/DayDatePickerView.h; sourceTree = "<group>"; };
 		48BACFA51BCBAF91002846E7 /* DayDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DayDatePickerView.m; path = ../../../../../Users/bingzhejin/Desktop/DayDatePickerView.m; sourceTree = "<group>"; };
@@ -268,6 +268,7 @@
 		0705D9741AADF05A00984988 /* TodoToday */ = {
 			isa = PBXGroup;
 			children = (
+				486EF2901BD019FF00A0C05D /* Default-568h@2x.png */,
 				0705D9751AADF05A00984988 /* App */,
 				0705D9781AADF05A00984988 /* AppDelegate.h */,
 				0705D9791AADF05A00984988 /* AppDelegate.m */,
@@ -480,7 +481,6 @@
 				07B9C2801AB356CF00BA6F1B /* bk_check_off.png */,
 				07B9C2811AB356CF00BA6F1B /* bk_check_on.png */,
 				07B9C2821AB356CF00BA6F1B /* bk_menu_normal.png */,
-				07B9C2831AB356CF00BA6F1B /* bk_plus_normal.psd */,
 				07B9C2841AB356CF00BA6F1B /* bk_plus_normal@2x.png */,
 				07B9C2851AB356CF00BA6F1B /* btn_getstarted.png */,
 				07B9C2861AB356CF00BA6F1B /* icon.png */,
@@ -600,7 +600,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0705DAD01AADF05A00984988 /* display_botton_down.png in Resources */,
-				07B9C2941AB356D000BA6F1B /* bk_plus_normal.psd in Resources */,
 				0705DACF1AADF05A00984988 /* display_botton.png in Resources */,
 				078D28051AB5FD3D00E281B7 /* bk_forward_normal.png in Resources */,
 				0705DACB1AADF05A00984988 /* LaunchScreen.xib in Resources */,
@@ -633,6 +632,7 @@
 				07B9C2951AB356D000BA6F1B /* bk_plus_normal@2x.png in Resources */,
 				07B9C2981AB356D000BA6F1B /* img_clock.png in Resources */,
 				07B9C29A1AB356D000BA6F1B /* radio_checked.png in Resources */,
+				486EF2921BD019FF00A0C05D /* Default-568h@2x.png in Resources */,
 				07B9C2AB1AB356DF00BA6F1B /* Temple Bell-SoundBible.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -750,6 +750,14 @@
 				0705D97D1AADF05A00984988 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		486EF2901BD019FF00A0C05D /* Default-568h@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				486EF2911BD019FF00A0C05D /* Base */,
+			);
+			name = "Default-568h@2x.png";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

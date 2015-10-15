@@ -7,8 +7,9 @@
 //
 #import "Todo.h"
 #import "SuperViewController.h"
+#import "DayDatePickerView.h"
 
-@interface EditEventViewController : SuperViewController <UITextFieldDelegate>
+@interface EditEventViewController : SuperViewController <UITextFieldDelegate,DayDatePickerViewDelegate>
 {
 }
 

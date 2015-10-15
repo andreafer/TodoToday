@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "SuperViewController.h"
+#import "DayDatePickerView.h"
 
-@interface AddFutureEventViewController : SuperViewController <UITextFieldDelegate>
+
+@interface AddFutureEventViewController : SuperViewController <UITextFieldDelegate,DayDatePickerViewDelegate>
 {
     
 }

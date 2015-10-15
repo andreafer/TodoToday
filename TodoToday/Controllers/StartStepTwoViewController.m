@@ -24,6 +24,12 @@ NSDate *thirdTime = nil;
 
 #pragma mark - Navigation Controller
 
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self viewDidLoad];
+}
 -(void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,6 +37,10 @@ NSDate *thirdTime = nil;
     firstTime = nil;
     secondTime = nil;
     thirdTime = nil;
+    
+    [_btnThirdTime setTitle:@" _ : _ _ " forState:UIControlStateNormal];
+    [_btnSecondTime setTitle:@" _ : _ _ " forState:UIControlStateNormal];
+    [_btnFirstTime setTitle:@" _ : _ _ " forState:UIControlStateNormal];
     for( int i = 0; i < [timeArray count]; i++ )
     {
         NSDate *date = [timeArray objectAtIndex:i];
@@ -356,32 +366,39 @@ NSDate *thirdTime = nil;
     [UIView commitAnimations];
 }
 
+-(void) ResetRemindDates{
+    [Common clearRemindDates];
+    if (firstTime !=nil)
+        [Common addRemindDate:firstTime];
+    if (secondTime !=nil)
+        [Common addRemindDate:secondTime];
+    if (thirdTime !=nil)
+        [Common addRemindDate:thirdTime];
+
+}
+
 
 - (IBAction)OnFirstTimeOffButton:(id)sender {
     [_radFirstTimeAM setSelected:NO];
     [_radFirstTimePM setSelected:NO];
     firstTime=nil;
-    [Common removeRemindDate:(0)];
     [_btnFirstTime setTitle:(@" _ : _ _ ") forState:UIControlStateNormal];
-
+    [self ResetRemindDates];
 }
 
 - (IBAction)OnSecondButtonTimeOffButton:(id)sender {
     [_radSecondTimeAM setSelected:NO];
     [_radSecondTimePM setSelected:NO];
     secondTime=nil;
-    [Common removeRemindDate:(1)];
     [_btnSecondTime setTitle:(@" _ : _ _ ") forState:UIControlStateNormal];
+    [self ResetRemindDates];
 }
 
 - (IBAction)OnThirdTimeOffButton:(id)sender {
     [_radThirdTimeAM setSelected:NO];
     [_radThirdTimePM setSelected:NO];
     thirdTime=nil;
-    [Common removeRemindDate:(2)];
     [_btnThirdTime setTitle:(@" _ : _ _ ") forState:UIControlStateNormal];
-
-
-
+    [self ResetRemindDates];
 }
 @end

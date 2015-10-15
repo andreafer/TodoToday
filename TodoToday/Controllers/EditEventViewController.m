@@ -14,6 +14,7 @@
 #import "ConstString.h"
 #import "TodoDateReminder.h"
 #import "Common.h"
+#import "DayDatePickerView.h"
 
 @implementation EditEventViewController
 
@@ -113,13 +114,6 @@ NSDate *todo_Date = nil;
 
 #pragma mark Date Picker Delegate
 
-- (void)changeDate:(UIDatePicker *)sender {
-    todo_Date = sender.date;
-    NSDateFormatter *format = [[NSDateFormatter alloc] init];
-    [format setDateFormat:@"MM/dd/yyyy"];
-    _txtDate.titleLabel.text = [format stringFromDate:todo_Date];
-    [_txtDate setTitle:[format stringFromDate:todo_Date] forState:UIControlStateNormal];
-}
 
 - (void)removeViews:(id)object {
     [[self.view viewWithTag:9] removeFromSuperview];
@@ -139,7 +133,18 @@ NSDate *todo_Date = nil;
     [UIView commitAnimations];
 }
 
+- (void)dayDatePickerView:(DayDatePickerView *)dayDatePickerView didSelectDate:(NSDate *)date {
+    todo_Date = date;
+    NSDateFormatter *format = [[NSDateFormatter alloc] init];
+    [format setDateFormat:@"MM/dd/yyyy"];
+    _txtDate.titleLabel.text = [format stringFromDate:todo_Date];
+    [_txtDate setTitle:[format stringFromDate:todo_Date] forState:UIControlStateNormal];
+}
+
+
+
 - (IBAction)onDateButton:(id)sender {
+    [self.view endEditing:YES];
     if ([self.view viewWithTag:9]) {
         return;
     }
@@ -154,13 +159,14 @@ NSDate *todo_Date = nil;
     [darkView addGestureRecognizer:tapGesture];
     [self.view addSubview:darkView];
     
-    UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height+44, 320, 216)];
-    datePicker.tag = 10;
-    datePicker.backgroundColor = [[UIColor alloc] initWithWhite:1 alpha:1];
-    datePicker.datePickerMode = UIDatePickerModeDate;
-    [datePicker addTarget:self action:@selector(changeDate:) forControlEvents:UIControlEventValueChanged];
-    [self changeDate:datePicker];
-    [self.view addSubview:datePicker];
+    
+    DayDatePickerView *daydatePicker=[[DayDatePickerView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height+44, 320, 216)];
+    daydatePicker.tag = 10;
+    daydatePicker.backgroundColor = [[UIColor alloc] initWithWhite:1 alpha:1];
+    daydatePicker.delegate=self;
+    daydatePicker.frame = datePickerTargetFrame;
+    [self.view addSubview:daydatePicker];
+
     
     UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height, 320, 44)];
     toolBar.tag = 11;
@@ -172,7 +178,7 @@ NSDate *todo_Date = nil;
     
     [UIView beginAnimations:@"MoveIn" context:nil];
     toolBar.frame = toolbarTargetFrame;
-    datePicker.frame = datePickerTargetFrame;
+    
     darkView.alpha = 0.5;
     [UIView commitAnimations];
 }
@@ -182,7 +188,8 @@ NSDate *todo_Date = nil;
 #define kOFFSET_FOR_KEYBOARD 80.0
 
 -(void)keyboardWillShow {
-    // Animate the current view out of the way
+        // Animate the current view out of the way
+    
     if (self.view.frame.origin.y >= 0)
     {
         [self setViewMovedUp:YES];
@@ -205,7 +212,10 @@ NSDate *todo_Date = nil;
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField
+
 {
+   // [self.view endEditing:YES];
+
     if ([textField isEqual:_txtContent])
     {
         //move the main view, so that the keyboard does not hide it.

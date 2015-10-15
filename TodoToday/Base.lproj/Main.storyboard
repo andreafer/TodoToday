@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cKR-fC-jkS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cKR-fC-jkS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -11,6 +11,7 @@
         <scene sceneID="k5m-D0-BVe">
             <objects>
                 <navigationController navigationBarHidden="YES" id="cKR-fC-jkS" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5fp-XU-JMf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,7 +26,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mq9-A6-YBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-68" y="-201.63999999999999"/>
+            <point key="canvasLocation" x="-127.5" y="-212.99999999999997"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="fme-ru-iXC">
@@ -45,19 +46,6 @@
                                     <constraint firstAttribute="width" secondItem="Hy2-AG-ee9" secondAttribute="height" multiplier="7:2" id="khB-WF-HUD"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXy-Ht-YTM" userLabel="Introduction">
-                                <rect key="frame" x="16" y="208" width="288" height="152"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="The World's Easiest and Most Effective  ToDo List">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="26" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTR-5d-YCZ" userLabel="GetStartedButton">
                                 <rect key="frame" x="60" y="475" width="200" height="40"/>
                                 <constraints>
@@ -71,6 +59,19 @@
                                     <action selector="onStartButton:" destination="DO4-ju-qTE" eventType="touchUpInside" id="kkc-pL-rQQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXy-Ht-YTM" userLabel="Introduction">
+                                <rect key="frame" x="16" y="208" width="288" height="152"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="The World's Easiest and Most Effective  ToDo List">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="26" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -87,18 +88,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="j53-tc-Ma5"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="1Sf-Ny-5dd" kind="modal" identifier="segueToSettings" id="H50-AN-013"/>
+                        <segue destination="1Sf-Ny-5dd" kind="presentation" identifier="segueToSettings" id="H50-AN-013"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYI-lN-6a3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308.80000000000001" y="-200.69333333333333"/>
+            <point key="canvasLocation" x="579" y="-211.99999999999997"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Py1-WC-XCX">
             <objects>
                 <navigationController storyboardIdentifier="GoalsViewNav" id="7NX-cG-xMk" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qyy-W8-mQC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -113,7 +116,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5F-GH-o4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308.80000000000001" y="493.21333333333331"/>
+            <point key="canvasLocation" x="579" y="520.99999999999989"/>
         </scene>
         <!--Today Goals-->
         <scene sceneID="H9S-Mf-Chv">
@@ -204,7 +207,7 @@
                                             <outlet property="btnCheck" destination="GHH-1i-hVN" id="v4W-hT-d8E"/>
                                             <outlet property="lblItemContent" destination="z8q-zq-NGX" id="gjQ-Li-1af"/>
                                             <outlet property="lblItemNumber" destination="ShK-r9-JyQ" id="3dG-Tl-49Z"/>
-                                            <segue destination="OWa-hX-mBo" kind="push" identifier="segueToEditEvent" id="DZn-lA-I1t"/>
+                                            <segue destination="OWa-hX-mBo" kind="show" identifier="segueToEditEvent" id="DZn-lA-I1t"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -266,31 +269,33 @@
                         <barButtonItem key="leftBarButtonItem" image="bk_menu_normal.png" id="6c1-dj-t09" userLabel="btnMenu">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="1Sf-Ny-5dd" kind="modal" identifier="segueToSetup" id="VyZ-Gr-HBM"/>
+                                <segue destination="1Sf-Ny-5dd" kind="presentation" identifier="segueToSetup" id="VyZ-Gr-HBM"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="bk_plus_normal.png" id="LfX-jO-4Ab" userLabel="btnAdd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="nME-MW-GqJ" kind="push" identifier="segueToAddEvent" id="0uj-81-RMB"/>
+                                <segue destination="nME-MW-GqJ" kind="show" identifier="segueToAddEvent" id="0uj-81-RMB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="lblNoItems" destination="YBr-xl-PEk" id="4lF-NI-FDq"/>
                         <outlet property="tableView" destination="JWT-D8-Iq1" id="PNT-ss-bb2"/>
                         <outlet property="txtTodayDate" destination="bQp-PK-5jN" id="dZ7-ER-zn9"/>
-                        <segue destination="6wP-Aa-dVw" kind="push" identifier="segueFromTodayGoals2Complete" id="2Xj-ZY-yzi"/>
+                        <segue destination="6wP-Aa-dVw" kind="show" identifier="segueFromTodayGoals2Complete" id="2Xj-ZY-yzi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UsY-nI-Akq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717.60000000000002" y="489.42666666666668"/>
+            <point key="canvasLocation" x="1345.5" y="517"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ybe-wd-vdU">
             <objects>
                 <navigationController storyboardIdentifier="AddTodoList" id="VAR-cx-pAB" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GO7-ER-SN5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -305,7 +310,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V80-tP-4Np" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308.80000000000001" y="1203.2133333333334"/>
+            <point key="canvasLocation" x="579" y="1271"/>
         </scene>
         <!--Add TodoList-->
         <scene sceneID="nlp-y0-iAy">
@@ -407,13 +412,14 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="_tableView" destination="ZxV-i0-USk" id="hft-nc-5np"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxT-fl-Ycf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717.60000000000002" y="1203.2133333333334"/>
+            <point key="canvasLocation" x="1345.5" y="1271"/>
         </scene>
         <!--Add Future Event-->
         <scene sceneID="3Bw-hb-98L">
@@ -502,6 +508,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="btnDate" destination="bz2-db-AFV" id="QAm-9e-tKe"/>
                         <outlet property="txtTodoContent" destination="szy-rg-Bfv" id="1E2-ot-BI3"/>
@@ -510,7 +517,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttO-I3-bjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fAO-JM-y2e" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1128" y="1203"/>
+            <point key="canvasLocation" x="2115" y="1270.7746478873239"/>
         </scene>
         <!--Edit Event-->
         <scene sceneID="FRw-Fv-2cO">
@@ -547,9 +554,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Your Event Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gX-sc-o9S">
-                                <rect key="frame" x="0.0" y="300" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="234" width="320" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="twG-sf-GjE"/>
+                                    <constraint firstAttribute="height" constant="100" id="X4U-8O-mJF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
@@ -585,18 +592,18 @@
                             <constraint firstItem="FKA-Wz-3hf" firstAttribute="top" secondItem="yeT-T3-5wc" secondAttribute="bottom" constant="8" symbolic="YES" id="Ahn-gv-Zfc"/>
                             <constraint firstItem="y8h-5S-NV2" firstAttribute="centerX" secondItem="FKA-Wz-3hf" secondAttribute="centerX" id="BSf-es-W1L"/>
                             <constraint firstItem="FKA-Wz-3hf" firstAttribute="centerX" secondItem="F01-1t-KVG" secondAttribute="centerX" id="HSB-ri-0k2"/>
-                            <constraint firstItem="1gX-sc-o9S" firstAttribute="leading" secondItem="F01-1t-KVG" secondAttribute="leading" id="Hc2-Zh-8nL"/>
+                            <constraint firstItem="1gX-sc-o9S" firstAttribute="centerY" secondItem="F01-1t-KVG" secondAttribute="centerY" id="IMg-48-4uc"/>
                             <constraint firstItem="EFn-1j-V5u" firstAttribute="leading" secondItem="y8h-5S-NV2" secondAttribute="leading" id="JeT-p9-Ftj"/>
                             <constraint firstItem="FKA-Wz-3hf" firstAttribute="leading" secondItem="F01-1t-KVG" secondAttribute="leadingMargin" constant="9" id="OiL-c3-Iac"/>
                             <constraint firstItem="Xvh-ee-g1I" firstAttribute="leading" secondItem="F01-1t-KVG" secondAttribute="leadingMargin" constant="74" id="OqJ-dK-2wJ"/>
                             <constraint firstItem="y8h-5S-NV2" firstAttribute="top" secondItem="FKA-Wz-3hf" secondAttribute="bottom" constant="2" id="PXc-lI-R7T"/>
                             <constraint firstItem="xnQ-Ar-Ghx" firstAttribute="trailing" secondItem="y8h-5S-NV2" secondAttribute="trailing" id="PaY-eZ-TBq"/>
-                            <constraint firstItem="1gX-sc-o9S" firstAttribute="centerX" secondItem="y8h-5S-NV2" secondAttribute="centerX" id="SOy-SS-0wh"/>
+                            <constraint firstItem="1gX-sc-o9S" firstAttribute="centerX" secondItem="Xvh-ee-g1I" secondAttribute="centerX" id="U5z-gh-zqB"/>
                             <constraint firstItem="EFn-1j-V5u" firstAttribute="leading" secondItem="F01-1t-KVG" secondAttribute="leadingMargin" constant="4" id="YB5-zD-krE"/>
-                            <constraint firstItem="Xvh-ee-g1I" firstAttribute="centerX" secondItem="1gX-sc-o9S" secondAttribute="centerX" id="iqJ-uE-hjC"/>
+                            <constraint firstItem="1gX-sc-o9S" firstAttribute="centerX" secondItem="y8h-5S-NV2" secondAttribute="centerX" id="is9-9h-8lJ"/>
                             <constraint firstItem="xnQ-Ar-Ghx" firstAttribute="leading" secondItem="EFn-1j-V5u" secondAttribute="trailing" constant="19" id="jWj-VY-Tk3"/>
-                            <constraint firstItem="1gX-sc-o9S" firstAttribute="top" secondItem="xnQ-Ar-Ghx" secondAttribute="bottom" constant="81" id="kys-tQ-goF"/>
                             <constraint firstItem="EFn-1j-V5u" firstAttribute="centerY" secondItem="xnQ-Ar-Ghx" secondAttribute="centerY" id="rmM-Mg-Soc"/>
+                            <constraint firstItem="1gX-sc-o9S" firstAttribute="leading" secondItem="F01-1t-KVG" secondAttribute="leading" id="sQf-CN-XIY"/>
                             <constraint firstItem="RtQ-XG-k3Y" firstAttribute="top" secondItem="Xvh-ee-g1I" secondAttribute="bottom" constant="34" id="tpv-2V-Bdl"/>
                             <constraint firstItem="xnQ-Ar-Ghx" firstAttribute="top" secondItem="y8h-5S-NV2" secondAttribute="bottom" constant="8" symbolic="YES" id="xb5-XI-Miq"/>
                         </constraints>
@@ -609,6 +616,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="txtContent" destination="y8h-5S-NV2" id="2vc-m1-0qz"/>
                         <outlet property="txtDate" destination="xnQ-Ar-Ghx" id="YM7-m2-MXO"/>
@@ -617,7 +625,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4mK-1M-tFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="z4I-fP-can" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1547.2" y="1203.2133333333334"/>
+            <point key="canvasLocation" x="2901" y="1271"/>
         </scene>
         <!--Congratulations-->
         <scene sceneID="ZNM-YT-jEy">
@@ -667,16 +675,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWx-nE-GVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128.8" y="493.21333333333331"/>
+            <point key="canvasLocation" x="2116.5" y="520.99999999999989"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fdL-XU-Jt6">
             <objects>
                 <navigationController id="1Sf-Ny-5dd" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X9b-sZ-8a3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -694,7 +704,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ji-4A-pcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717.60000000000002" y="-201.63999999999999"/>
+            <point key="canvasLocation" x="1345.5" y="-212.99999999999997"/>
         </scene>
         <!--Step One-->
         <scene sceneID="A4g-Co-M0W">
@@ -1278,7 +1288,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btW-iV-MJe" userLabel="SundayCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="btW-iV-MJe" secondAttribute="height" multiplier="1:1" id="VBK-bh-RLH"/>
+                                                                    <constraint firstAttribute="width" secondItem="btW-iV-MJe" secondAttribute="height" multiplier="1:1" id="P6A-9c-8gS"/>
                                                                 </constraints>
                                                                 <state key="normal" backgroundImage="bk_check_off.png">
                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1288,7 +1298,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVx-CI-WrI" userLabel="SundayLabel">
                                                                 <rect key="frame" x="11" y="32" width="9" height="17"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="17" id="mDM-Hd-DPD"/>
+                                                                    <constraint firstAttribute="height" constant="17" id="iO1-71-NoI"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -1305,16 +1315,16 @@
                                                             </button>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="UVx-CI-WrI" secondAttribute="trailing" constant="11" id="9bY-Oh-yTU"/>
-                                                            <constraint firstItem="UVx-CI-WrI" firstAttribute="leading" secondItem="Omw-r9-bb4" secondAttribute="leading" constant="11" id="Bcs-Ck-SgC"/>
-                                                            <constraint firstItem="btW-iV-MJe" firstAttribute="top" secondItem="Omw-r9-bb4" secondAttribute="top" id="ErX-hS-UT6"/>
-                                                            <constraint firstAttribute="trailing" secondItem="btW-iV-MJe" secondAttribute="trailing" constant="1" id="Q4w-UL-Gu6"/>
-                                                            <constraint firstItem="UVx-CI-WrI" firstAttribute="top" secondItem="btW-iV-MJe" secondAttribute="bottom" constant="2" id="QFC-TJ-mJm"/>
+                                                            <constraint firstItem="UVx-CI-WrI" firstAttribute="leading" secondItem="Omw-r9-bb4" secondAttribute="leading" constant="11" id="8UH-HE-14u"/>
+                                                            <constraint firstItem="btW-iV-MJe" firstAttribute="leading" secondItem="Omw-r9-bb4" secondAttribute="leading" id="LLw-k9-aYV"/>
                                                             <constraint firstAttribute="trailing" secondItem="0V7-Jb-Wle" secondAttribute="trailing" id="SGA-5B-2pz"/>
                                                             <constraint firstItem="0V7-Jb-Wle" firstAttribute="leading" secondItem="Omw-r9-bb4" secondAttribute="leading" id="Tbm-xU-afp"/>
-                                                            <constraint firstItem="btW-iV-MJe" firstAttribute="leading" secondItem="Omw-r9-bb4" secondAttribute="leading" id="dbg-5A-D1v"/>
+                                                            <constraint firstItem="btW-iV-MJe" firstAttribute="top" secondItem="Omw-r9-bb4" secondAttribute="top" id="aau-qa-DRA"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UVx-CI-WrI" secondAttribute="trailing" constant="11" id="dNW-NO-BpP"/>
+                                                            <constraint firstAttribute="trailing" secondItem="btW-iV-MJe" secondAttribute="trailing" constant="1" id="gAQ-Zx-3TX"/>
                                                             <constraint firstAttribute="bottom" secondItem="0V7-Jb-Wle" secondAttribute="bottom" id="jXU-ZY-QvO"/>
                                                             <constraint firstItem="0V7-Jb-Wle" firstAttribute="top" secondItem="Omw-r9-bb4" secondAttribute="top" id="nxG-w6-ciF"/>
+                                                            <constraint firstItem="UVx-CI-WrI" firstAttribute="top" secondItem="btW-iV-MJe" secondAttribute="bottom" constant="2" id="us1-ll-n5d"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -1340,27 +1350,18 @@
                                                     <constraint firstAttribute="bottom" secondItem="A3p-Tu-uRG" secondAttribute="bottom" id="kiZ-Ef-Ozk"/>
                                                     <constraint firstItem="frK-FE-alR" firstAttribute="top" secondItem="NHx-4k-pTu" secondAttribute="top" id="lWU-e8-VNL"/>
                                                     <constraint firstItem="hjR-jz-TJv" firstAttribute="top" secondItem="NHx-4k-pTu" secondAttribute="top" id="lfR-AH-jw2"/>
+                                                    <constraint firstAttribute="width" constant="222" id="lxa-l5-GSp"/>
                                                     <constraint firstAttribute="bottom" secondItem="cpV-TH-ZsC" secondAttribute="bottom" id="t7U-E3-kb7"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="NHx-4k-pTu" secondAttribute="bottom" constant="22" id="1DQ-4N-EZS"/>
-                                            <constraint firstAttribute="trailing" secondItem="NHx-4k-pTu" secondAttribute="trailing" constant="49" id="bbp-Zg-X7U"/>
                                             <constraint firstItem="NHx-4k-pTu" firstAttribute="top" secondItem="UVH-iV-B6c" secondAttribute="top" constant="22" id="d2t-Or-Xct"/>
                                             <constraint firstAttribute="height" constant="94" id="mAA-h2-SDm"/>
-                                            <constraint firstItem="NHx-4k-pTu" firstAttribute="leading" secondItem="UVH-iV-B6c" secondAttribute="leading" constant="49" id="v6b-PV-11b"/>
+                                            <constraint firstItem="NHx-4k-pTu" firstAttribute="centerX" secondItem="UVH-iV-B6c" secondAttribute="centerX" id="oR2-VG-Epf"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days you want 3 ToDo Today to be active." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-IN-orS" userLabel="Days you want 3 ToDo Today to be active.">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="95" id="Oii-nK-cNN"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMi-6D-IvH">
                                         <rect key="frame" x="0.0" y="173" width="320" height="95"/>
                                         <subviews>
@@ -1385,6 +1386,15 @@
                                             <constraint firstItem="4BS-aV-96N" firstAttribute="top" secondItem="uMi-6D-IvH" secondAttribute="top" constant="8" id="o2u-6K-kIe"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days you want 3 ToDo Today to be active." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-IN-orS" userLabel="Days you want 3 ToDo Today to be active.">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="95" id="Oii-nK-cNN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="WQJ-IN-orS" secondAttribute="trailing" id="32P-Ao-lAw"/>
@@ -1418,6 +1428,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Step 1" id="gnP-X3-b9f"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="chkFriday" destination="4gW-SD-rlx" id="vh4-9v-5eW"/>
                         <outlet property="chkMonday" destination="sga-rV-t6j" id="lVl-01-cfQ"/>
@@ -1431,12 +1442,12 @@
                         <outlet property="radioOne" destination="1Fk-Ep-7TJ" id="IPi-Lm-DUJ"/>
                         <outlet property="radioThree" destination="wK2-q5-Svb" id="seh-EF-ZCY"/>
                         <outlet property="radioTwo" destination="qyh-Yh-KbO" id="vQ4-HS-E4y"/>
-                        <segue destination="YIa-LF-v8k" kind="push" identifier="segueFromStepOne2Two" id="pde-Wa-xeH"/>
+                        <segue destination="YIa-LF-v8k" kind="show" identifier="segueFromStepOne2Two" id="pde-Wa-xeH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPZ-v8-Fxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128" y="-201"/>
+            <point key="canvasLocation" x="2115" y="-212.32394366197181"/>
         </scene>
         <!--Step Two-->
         <scene sceneID="0bm-bF-gZ3">
@@ -1818,7 +1829,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="5kD-Si-JMR" kind="push" identifier="segueFromStepTwo2Three" id="tEC-uf-9xW"/>
+                                                    <segue destination="5kD-Si-JMR" kind="show" identifier="segueFromStepTwo2Three" id="tEC-uf-9xW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1868,6 +1879,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="btnFirstTime" destination="JUV-9E-kYM" id="KNJ-Rs-Upw"/>
                         <outlet property="btnFirstTimeOffButton" destination="ON1-V4-ykJ" id="wTo-cM-vH8"/>
@@ -1886,7 +1898,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xav-uN-YAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1547" y="-203"/>
+            <point key="canvasLocation" x="2900.625" y="-214.43661971830986"/>
         </scene>
         <!--Step Three-->
         <scene sceneID="QfU-6D-sBj">
@@ -1919,7 +1931,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Vm6-lk-0jb" kind="push" identifier="segueFromStep3Complete" id="fPS-8z-iKt"/>
+                                    <segue destination="Vm6-lk-0jb" kind="show" identifier="segueFromStep3Complete" id="fPS-8z-iKt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfL-Lk-zbC" userLabel="btnAlertSound">
@@ -1930,7 +1942,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NNA-XR-PZ1" kind="push" id="I8y-Xu-fUq"/>
+                                    <segue destination="NNA-XR-PZ1" kind="show" id="I8y-Xu-fUq"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please click the button" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vHG-ha-2B9">
@@ -1968,6 +1980,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="btnAlertSound" destination="LfL-Lk-zbC" id="DeM-mS-Fa5"/>
                         <outlet property="txtSoundName" destination="vHG-ha-2B9" id="I2L-nO-Xns"/>
@@ -1975,7 +1988,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdO-cw-ebB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1938" y="-201"/>
+            <point key="canvasLocation" x="3633.75" y="-212.32394366197181"/>
         </scene>
         <!--Step Complete-->
         <scene sceneID="mxK-tD-bZH">
@@ -1995,12 +2008,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-Ne-EPh" userLabel="LogoIconView">
-                                <rect key="frame" x="25" y="101" width="270" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="jf8-Ne-EPh" secondAttribute="height" multiplier="7:2" id="9JB-fo-jnX"/>
-                                </constraints>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ppM-Xi-pvl" userLabel="todo_table">
                                 <rect key="frame" x="25" y="216" width="270" height="284"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2033,7 +2040,7 @@
                                         <connections>
                                             <outlet property="lblItemContent" destination="0h0-3d-9cQ" id="Yhv-bN-ndp"/>
                                             <outlet property="lblItemNumber" destination="dgu-uD-d5N" id="p69-KC-S9s"/>
-                                            <segue destination="OWa-hX-mBo" kind="push" identifier="segueToEditEvent" id="MHA-82-IgD"/>
+                                            <segue destination="OWa-hX-mBo" kind="show" identifier="segueToEditEvent" id="MHA-82-IgD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2060,9 +2067,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7NX-cG-xMk" kind="modal" id="Jtr-d7-Amv"/>
+                                    <segue destination="7NX-cG-xMk" kind="presentation" id="Jtr-d7-Amv"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-Ne-EPh" userLabel="LogoIconView">
+                                <rect key="frame" x="25" y="101" width="270" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jf8-Ne-EPh" secondAttribute="height" multiplier="7:2" id="9JB-fo-jnX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -2094,10 +2107,11 @@
                         <barButtonItem key="rightBarButtonItem" image="bk_plus_normal.png" id="cfI-nz-k5g" userLabel="btnAdd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="nME-MW-GqJ" kind="push" identifier="segueToAddEvent" id="GDd-sJ-V69"/>
+                                <segue destination="nME-MW-GqJ" kind="show" identifier="segueToAddEvent" id="GDd-sJ-V69"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="lblNoItem" destination="Xjf-Cc-LS0" id="3Nf-hW-lSd"/>
                         <outlet property="tableView" destination="ppM-Xi-pvl" id="Le0-2J-tch"/>
@@ -2105,7 +2119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAc-zm-opg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2342.4000000000001" y="-206.37333333333333"/>
+            <point key="canvasLocation" x="4392" y="-218"/>
         </scene>
         <!--Sound View Controller-->
         <scene sceneID="lrF-IX-M9d">
@@ -2160,11 +2174,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5YE-yX-sxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ECx-J6-7AQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2342.4000000000001" y="-842.5333333333333"/>
+            <point key="canvasLocation" x="4392" y="-889.99999999999989"/>
         </scene>
     </scenes>
     <resources>
@@ -2184,7 +2199,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VyZ-Gr-HBM"/>
-        <segue reference="0uj-81-RMB"/>
-        <segue reference="DZn-lA-I1t"/>
+        <segue reference="MHA-82-IgD"/>
+        <segue reference="GDd-sJ-V69"/>
     </inferredMetricsTieBreakers>
 </document>
